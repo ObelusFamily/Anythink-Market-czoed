@@ -1,13 +1,26 @@
-# Welcome to the Anythink Market repo
+# Anythink Frontend
 
-To start the app use Docker. It will start both frontend and backend, including all the relevant dependencies, and the db.
+The Anythink Frontend is an SPA written with [React](https://reactjs.org/) and [Redux](https://redux.js.org/)
 
-Please find more info about each part in the relevant Readme file ([frontend](frontend/readme.md) and [backend](backend/README.md)).
+## Getting started
 
-## Development
+Make sure your server is up and running to serve requests.
 
-When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
+## Pages overview
 
-## First setup
-
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+- Home page (URL: /#/ )
+  - List of tags
+  - List of items pulled from either Feed, Global, or by Tag
+  - Pagination for list of items
+- Sign in/Sign up pages (URL: /#/login, /#/register )
+  - Use JWT (store the token in localStorage)
+- Settings page (URL: /#/settings )
+- Editor page to create/edit articles (URL: /#/editor, /#/editor/slug )
+- Item page (URL: /#/item/slug )
+  - Delete item button (only shown to item's author)
+  - Render markdown from server client side
+  - Comments section at bottom of page
+  - Delete comment button (only shown to comment's author)
+- Profile page (URL: /#/@username, /#/@username/favorites )
+  - Show basic user info
+  - List of items populated from seller's items or user favorite items
