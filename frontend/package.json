@@ -2,7 +2,7 @@
   "name": "anythink-market-front",
   "version": "0.1.0",
   "engines": {
-    "node": "18.8.0"
+    "node": "^16"
   },
   "license": "UNLICENSED",
   "private": true,
